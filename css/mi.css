@@ -126,7 +126,7 @@
     display: none;
 }
 
-.header-left>li.hover>.triangle{
+.header-left>li:hover>.triangle{
     display: block;
 }
 
