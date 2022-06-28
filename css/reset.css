@@ -11,6 +11,7 @@ ul,ol,lo{
 }
 a{
     text-decoration: none;
+    color: #333333;
 }
 input,button,img{
     border: none;

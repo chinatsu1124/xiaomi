@@ -135,6 +135,7 @@
 
 /*导航样式开始*/
 .nav{
+    position: relative;
     width: 100%;
     height: 100px;
     background-color: #ffffff;
@@ -158,7 +159,6 @@
     width: 296px;
     height: 50px;
     margin-top: 25px;
-    background-color: pink;
     float: left;
 }
 
@@ -175,14 +175,100 @@
     padding: 2.475em 10px;
 }
 
-.nav-bar>ul>li:hover>a>span{
+.nav-bar>ul>li:hover>a{
     color: #ff6700;
 }
 
-.nav-bar span{
-    font-size: 16px;
-    color: #333333;
+.search>input{
+    float: left;
+    width: 245px;
+    height: 50px;
+    border: 1px solid #e0e0e0;
+    border-right: none;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    transition: all .2s;
 }
+
+.search>a{
+    float: left;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    font-size: 24px;
+    color: #616161;
+    line-height: 48px;
+    transition: all .2s;
+}
+
+.search>a:hover{
+    background-color: #ff6700;
+    border-color: #ff6700;
+    color: #ffffff;
+}
+
+.search>input:hover,.search>input:hover+a{
+    border-color: #b0b0b0;
+}
+
+.search>input:focus,.search>input:focus+a{
+    border-color: #ff6700;
+}
+
+/*下拉列表开始*/
+.nav-bar-list{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 230px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-top: 1px solid #e0e0e0;
+    box-shadow: 0px 3px 4px rgba(0,0,0,.18);
+    display: none;
+}
+
+.nav-bar li:hover>.nav-bar-list{
+    display: block;
+
+}
+
+.nav-bar-list li{
+    float: left;
+    width: 204px;
+    padding-top: 35px;
+}
+
+.img-box{
+    width: 100%;
+    height: 110px;
+    border-right: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+}
+
+.img-box>img{
+    height: 110px;
+    width: 160px;
+}
+
+.name1,.price1{
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.price1{
+    color: #ff6700;
+}
+
+.nav-bar-list li:last-child .img-box{
+    border-right: none;
+}
+/*下拉列表结束*/
+
 /*导航样式结束*/
 
 /*css样式结束*/
