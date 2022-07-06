@@ -401,6 +401,10 @@
     display: none;
 }
 
+.slide-list1{
+    width: 744px;
+}
+
 .slide li:hover>.slide-list{
     display: block;
 }
@@ -678,10 +682,6 @@
 
 /*视频样式开始*/
 
-.video-box{
-
-}
-
 .video-items{
     width: 296px;
     height: 285px;
@@ -714,6 +714,13 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.video-items h1{
+    font-size: 12px;
+    color: #b0b0b0;
+    margin: 0;
+    font-weight: normal;
 }
 
 .play{
